@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 090425</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <style>
+            body {
+                font-family: arial;
+                text-align: center;
+                padding: 60px;
+            }
+
+            .icon-box {
+                border: 1px solid rgb(227, 229, 232);
+                display: inline-block;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 10px;
+            }
+
+            .icon-box i {
+                color: rgb(77, 146, 224);
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+            .icon-box i:hover{
+                color: rgb(237, 140, 156);
+            }
+
+            .icon-box:hover{
+                border-color: purple;
+                animation: bounce 2s infinite;
+            }
+
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100%{
+                    transform: translateY(0);
+                }
+                40%{
+                    transform: translateY(-10px);
+                }
+                60% {
+                    transform: translateY(-5px);
+                }
+            }
+
+            .icon-box i.rotate {
+                animation: rotate 2s linear infinite;
+            }
+            
+            @keyframes rorate {
+                0% {transform: rotate(0deg);}
+                100% {transform: rotate(360deg);}
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <h1>Latihan Penggunaan Font Awesome</h1>
+        <p>Berikut adalah beberapa contoh penggunaan ikon Font Awesome</p>
+
+        <div class="icon-box">
+            <i class="fas fa-user rorate"></i>  
+            <p>Profil</p>      
+        </div>
+
+        <div class="icon-box">
+            <i class="fas fa-envelope rotate"></i>
+            <p>Email</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fas fa-phone"></i>
+            <p>Telepon</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fab fa-linkedin"></i>
+            <p>LinkedIn</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Location</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+        </div>
+
+        <div class="icon-box">
+            <i class="fa-solid fa-address-card"></i>
+            <p>Website</p>
+        </div>
+
+    </body>
+</html>
